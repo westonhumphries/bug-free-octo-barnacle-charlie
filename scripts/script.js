@@ -15,6 +15,19 @@ counts = 0;
 
  });
 
+// took from Dr cumbie
+ $("#resetGame").click(function () {
+  console.log("clicked button");
+  counts = 0;
+
+  $("span.count").text(counts);
+  $("#gameOutput").text("");
+
+  $("#draggable").fadeOut(40).animate({ left: 0 }).fadeIn(30);
+});
+
+
+
  function updateCounterStatus($bravo_counter, drag_count) {
 
 //todo: if more than 174, then wow. if not, no wow
